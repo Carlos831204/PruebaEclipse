@@ -10,9 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Maven@3
-  inputs:
-    codeCoverageToolOption: Cobertura
 - task: CopyFiles@2
   displayName: 'Copy files to: $(Build.ArtifactStagingDirectory)'
   inputs:
